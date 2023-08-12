@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%
+}
+body{
+    background: #007fb6;
+}
+ section
+    {
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+        overflow: hidden;
+        margin:0;
+        background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 9%;
+        background:#002433;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .navbar a{
+        font-size: 1.7rem;
+        color: #FFFFFF;
+        margin-left: 4rem;
+        transition: .3s;
+    }
+    
+    .navbar a:hover,
+    .navbar a.active{
+      color: #FFFFFF;
+      background: #747072;
+      border-radius: 15px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .login
+    {
+        font-size: x-large;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .logo
+    {
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: default;
+    }
+    .logo img
+    {
+        width: 4vw;
+        filter: drop-shadow(10px 11px 12px  #fff);
+    }
+    .home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.home-img img
+{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+    filter: drop-shadow(8px 7px 6px  #fff);
+}
+@keyframes  floatImage
+{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+.home-content h3 :nth-of-type(2){
+    margin-bottom: 2rem;
+
+}
+span{
+    color: #0ef;
+}
+.home-content h1
+{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content p 
+{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    font-size:30px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid ;
+    border-radius: 50%;
+    font-size: 2rem ;
+    color:#fff;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: #002433;
+    color: black;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background:#002433 ;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #000000;
+    color:#fff;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.all-Courses .Title
+{
+   text-align:right ;
+   right: 15rem;
+   color: #fff;
+   font-size: 30px;
+   font-weight: 500;
+}
+.content
+{
+    margin-top: 105px;
+}
+.content .container{
+    max-width :98% ;
+    float: left;
+    margin: 5rem;
+    text-align: center;
+    color: #fff;
+    background: #002433;
+    height: 60rem;
+    border-radius: 15px;
+    box-shadow: 10px 11px 12px #000000;
+    transition: all .3s ;
+}
+.content .container img
+{
+    width: 30vw;
+}
+.content .container .title 
+{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 15px;
+}
+.content .container:hover
+{
+    background: #0f4055;
+}
+.Probleme .Title
+{
+   text-align:right ;
+   right: 15rem;
+   color: #fff;
+   font-size: 30px;
+   font-weight: 500;
+}
+.quizz-row1 .quizz ,.quizz-row2 .quizz
+{
+    max-width :98% ;
+    float: left;
+    width: 30rem;
+    margin: 3rem;
+    text-align: center;
+    color: #fff;
+    background: #002433;
+    height: 40rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 10px 11px 12px #000000;
+    transition: all .3s ;
+}
+.quizz-row1 .quizz img ,.quizz-row2 .quizz img
+{
+    width: 15vw;
+    filter: drop-shadow(10px 11px 12px #fff);
+}
+.quizz-row1 .quizz h2 ,.quizz-row2 .quizz h2
+{
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    top: -4rem;
+}
+.quizz-row1 .quizz p ,.quizz-row2 .quizz p
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.quizz-row1 .quizz:hover ,.quizz-row2 .quizz:hover{
+    background: #0f4055;
+}
+/* contact */
+.contact form
+{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact  h2 { 
+    font-size: 40px;  
+}
+.contact span
+{
+    filter: drop-shadow(4px 5px 6px #000000);
+}
+.contact form .input-box
+{
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    box-sizing: content-box;
+    filter: drop-shadow(3px 4px 5px #fff);
+}
+
+.contact form .input-box input ,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background:rgb(255, 255, 255);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {width: 49%;}
+
+.contact form textarea
+{
+    resize: none;
+}
+/* hna aji */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background-color:#0099ff;
+}
+.footer-text p{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background:#fff ;
+    border-radius:.8rem ;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #002433;
+}
+
+.footer-iconTop a i {
+    font-size: 2.7rem;
+    color: #000000;
+}
